@@ -13,6 +13,13 @@ describe('object-get', function(){
     ).toEqual(undefined);
   });
 
+  it('returns bracket key contents', function(){
+    var expected = [3,2,1,0];
+    expect(
+      get({ a: { b: { c: expected } } }, 'a.b.[c]')
+    ).toEqual(expected)
+  });
+
   it('returns array indexes', function(){
     expect(
       get({ a: { b: { c: [3,2,1,0] } } }, 'a.b.c.[3]')
