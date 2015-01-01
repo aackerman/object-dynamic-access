@@ -2,8 +2,9 @@
   "name": "object-get",
   "version": "0.0.0",
   "description": "Object value lookup by path",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "js": "6to5 --modules umd index.js --out-dir dist",
     "test": "karma start karma.conf.js"
   },
   "author": "Aaron Ackerman <theron17@gmail.com>",
