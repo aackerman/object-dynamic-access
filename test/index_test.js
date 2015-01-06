@@ -17,12 +17,18 @@ describe('object-get', function(){
     var expected = [3,2,1,0];
     expect(
       get({ a: { b: { c: expected } } }, 'a.b.[c]')
-    ).toEqual(expected)
+    ).toEqual(expected);
   });
 
   it('returns array indexes', function(){
     expect(
       get({ a: { b: { c: [3,2,1,0] } } }, 'a.b.c.[3]')
-    ).toEqual(0)
+    ).toEqual(0);
+  });
+
+  it('returns objects from array indexed objects', function(){
+    expect(
+      get({ a: { b: { c: [3,2,1,{ d: 'e' }] } } }, 'a.b.c.[3].d')
+    ).toEqual('e');
   });
 });
