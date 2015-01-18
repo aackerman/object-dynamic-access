@@ -1,6 +1,6 @@
 {
   "name": "object-get",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Object value lookup by path",
   "main": "dist/index.js",
   "scripts": {
