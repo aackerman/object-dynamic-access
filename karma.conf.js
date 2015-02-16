@@ -66,7 +66,7 @@ module.exports = function(config) {
     webpack: {
       module: {
         loaders: [
-          { test: /\.js/, loader: '6to5-loader' }
+          { test: /\.js/, loader: 'babel-loader' }
         ]
       }
     },
