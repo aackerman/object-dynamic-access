@@ -1,5 +1,5 @@
 {
-  "name": "object-get",
+  "name": "object-dynamic-access",
   "version": "0.2.0",
   "description": "Object value lookup by path",
   "main": "dist/index.js",
